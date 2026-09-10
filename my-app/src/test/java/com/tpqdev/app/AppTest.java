@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
  */
 public class AppTest {
 
-
-    @Test
+    // test permattant de vérifier que l'addition s'effectue correctement
+    @Test    
     public void testAd() {
 
         Add calc = new Add();
