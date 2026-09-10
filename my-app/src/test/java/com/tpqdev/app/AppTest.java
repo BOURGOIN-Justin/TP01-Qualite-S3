@@ -21,5 +21,14 @@ public class AppTest {
         
         // Assert : Vérification du résultat
         assertEquals(5, resultat, "2 + 3 doit être égal à 5");
+    @Test
+    public void subTest1() {
+        int a = 80;
+        int b = 12;
+        int result = 68;
+
+        int found = Sub.sub(a, b);
+
+        assertEquals(result, found);
     }
 }
