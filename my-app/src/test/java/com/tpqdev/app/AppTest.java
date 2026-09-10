@@ -1,5 +1,6 @@
 package com.tpqdev.app;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -9,11 +10,16 @@ import org.junit.jupiter.api.Test;
  */
 public class AppTest {
 
-    /**
-     * Rigorous Test :-)
-     */
+
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void testAd() {
+
+        Add calc = new Add();
+        
+     
+        int resultat = calc.add(2, 3);
+        
+        // Assert : Vérification du résultat
+        assertEquals(5, resultat, "2 + 3 doit être égal à 5");
     }
 }
