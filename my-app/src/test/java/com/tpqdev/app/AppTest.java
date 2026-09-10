@@ -1,6 +1,6 @@
 package com.tpqdev.app;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,11 +9,14 @@ import org.junit.jupiter.api.Test;
  */
 public class AppTest {
 
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void subTest1() {
+        int a = 80;
+        int b = 12;
+        int result = 68;
+
+        int found = Sub.sub(a, b);
+
+        assertEquals(result, found);
     }
 }
