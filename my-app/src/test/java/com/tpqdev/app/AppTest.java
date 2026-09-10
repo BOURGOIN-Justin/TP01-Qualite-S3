@@ -21,6 +21,7 @@ public class AppTest {
         
         // Assert : Vérification du résultat
         assertEquals(5, resultat, "2 + 3 doit être égal à 5");
+    }
     @Test
     public void subTest1() {
         int a = 80;
@@ -32,3 +33,4 @@ public class AppTest {
         assertEquals(result, found);
     }
 }
+
